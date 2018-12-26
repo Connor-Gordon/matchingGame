@@ -2,13 +2,18 @@ html {box-sizing: border-box;}
 *, *:before, *: after {box-sizing: inherit;}
 
 body {
+	height: 1070px;
 	margin: 0;
-	
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background: url("https://i.pinimg.com/originals/a4/5c/78/a45c7867fde64b149137e6a0d0cd3a1b.jpg");
+	background-position: -124px -9px;
+    background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #pics {
+	margin: 100px 250px;
 	width: 1000px;
-	border: solid 1px black;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -19,7 +24,8 @@ body {
 	height: 150px;
 	width: 150px;
 	position: relative;
-	
+	margin: 5px;
+	display: none;
 }
 
 .card .randomPic  {
@@ -35,7 +41,33 @@ body {
 	height: 150px;
 	width: 150px;
 	border: solid 1px black;
-	background-color: blue;
+	background: url("https://naldzgraphics.net/wp-content/uploads/2013/03/24-stalk-grass-patterns-free-download-seamless.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+#startScreen {
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#startButton {
+	margin-top: 20px;
+	font-size: 50px;
+	background: transparent;
+	border: none;
+}
+
+
+h1 {
+	
+	margin: 0;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 50px;
 }
 
 
@@ -49,3 +81,29 @@ img {
     right: -18px;
 }
 
+.disabled {
+	pointer-events: none;
+}
+
+.win, .lose {
+	display: none;
+}
+
+#win, #lose {
+	font-size: 50px;
+	margin-top: 100px;
+	height: 500px;
+	text-align: center;
+}
+
+
+#countDisplay {
+	margin-left: 255px;
+	margin-top: -100px;
+	font-size: 25px;
+}
+
+#timer {
+	margin-left: 255px;
+	font-size: 25px;
+}
